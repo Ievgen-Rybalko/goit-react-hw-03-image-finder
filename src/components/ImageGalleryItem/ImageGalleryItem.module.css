@@ -1,0 +1,16 @@
+.ImageGalleryItem__container {
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.ImageGalleryItem {
+  width: 100%;
+  height: calc(33vh - 25px);
+  object-fit: cover;
+  transition: transform 250ms linear;
+}
+
+.ImageGalleryItem:hover {
+  cursor: zoom-in;
+  transform: scale(1.05);
+}
