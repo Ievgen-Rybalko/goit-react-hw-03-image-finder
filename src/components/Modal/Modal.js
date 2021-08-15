@@ -20,12 +20,12 @@ export default class Modal extends Component {
   };
 
   handleBackDropClick = e => {
-    console.log(
-      'e.currentTarget: ',
-      e.currentTarget,
-      '   e.target: ',
-      e.target,
-    );
+    // console.log(
+    //   'e.currentTarget: ',
+    //   e.currentTarget,
+    //   '   e.target: ',
+    //   e.target,
+    // );
     if (e.currentTarget === e.target) {
       this.props.onClose();
     }
@@ -33,7 +33,7 @@ export default class Modal extends Component {
 
   render() {
     const { src, alt } = this.props;
-    console.log('Styles in modal', styles.Overlay);
+    //console.log('Styles in modal', styles.Overlay);
     return createPortal(
       <div className={styles.Overlay} onClick={this.handleBackDropClick}>
         <div className={styles.Modal}>

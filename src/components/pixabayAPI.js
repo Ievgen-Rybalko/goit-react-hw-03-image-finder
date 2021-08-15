@@ -7,12 +7,12 @@ const KEY = 'key=21933433-c49aed7af732e0bc1136ba9bb';
 const IMG_TYPE = 'image_type=photo&orientation=horizontal';
 
 function fetchImages(searchQuery = '', currentPage = 1) {
-  console.log(
-    'Inside API file: searchQuery',
-    searchQuery,
-    'currentPage',
-    currentPage,
-  );
+  //   console.log(
+  //     'Inside API file: searchQuery',
+  //     searchQuery,
+  //     'currentPage',
+  //     currentPage,
+  //   );
   return fetch(
     `${BASE_URL}?q=${searchQuery}&page=${currentPage}&${KEY}&${IMG_TYPE}&per_page=12`,
   ).then(res => {

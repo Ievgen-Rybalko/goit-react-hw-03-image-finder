@@ -4,7 +4,7 @@ import styles from './ImageGallery.module.css';
 
 class ImageGallery extends Component {
   componentDidUpdate() {
-    console.log('gallerey was Updated:', document.documentElement.scrollHeight);
+    //console.log('gallerey was Updated:', document.documentElement.scrollHeight);
     window.scrollTo({
       top: document.documentElement.scrollHeight,
       behavior: 'smooth',

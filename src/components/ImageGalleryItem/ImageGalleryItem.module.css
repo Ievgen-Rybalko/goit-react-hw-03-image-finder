@@ -5,7 +5,7 @@
 
 .ImageGalleryItem {
   width: 100%;
-  height: calc(33vh - 25px);
+  height: calc(32vh - 25px);
   object-fit: cover;
   transition: transform 250ms linear;
 }

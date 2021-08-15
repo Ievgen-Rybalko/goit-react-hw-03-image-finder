@@ -50,16 +50,11 @@ class App extends Component {
 
   fetchImgs = () => {
     // this.setState({ isLoading: true },);
-    console.log(
-      'in fetchImg: this.state.searchQuery',
-      this.state.searchQuery,
-      'this.state.currentPage',
-      this.state.currentPage,
-    );
+
     pixabayAPI
       .fetchImages(this.state.searchQuery, this.state.currentPage)
       .then(data => {
-        console.log('images data', data);
+        //console.log('images data', data);
         const images = data.hits;
         this.setState(prevState => ({
           imgOnCurrentPage: [...images],

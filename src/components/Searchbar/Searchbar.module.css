@@ -1,5 +1,13 @@
 .Searchbar {
   line-height: 20px;
+  padding-top: 5px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 219, 255, 0.8603816526610644) 48%,
+    rgba(9, 9, 121, 1) 100%
+  );
 }
 
 .SearchForm__button {
@@ -13,15 +21,26 @@
   border-radius: 5px;
   margin-bottom: 10px;
   margin-right: 10px;
-}
-
-.active {
   background-color: #237bb6;
   color: #ffffff;
+  -webkit-box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+    10px 1px 12px -5px rgba(0, 0, 0, 0.46);
+  box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+    10px 1px 12px -5px rgba(0, 0, 0, 0.46);
 }
 
-.inactive {
-  color: #28475c;
-  background-color: #383232;
+.SearchForm__button_disabled {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background-color: #99c7e5;
+  color: #76b9cf;
   pointer-events: none;
 }
